@@ -10,31 +10,24 @@ public class back3052 {
 
         int[] arr = new int[10];                       //수의 배열
         int[] restArr = new int[42];                   // 나머지 배열
-        int result=0 ;                                    //나머지 값
+        int result = 0;                                //나머지 값
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             arr[i] = scanner.nextInt();
         }
 
         for (int i = 0; i < arr.length; i++) {
-
             arr[i] = arr[i] % 42;
             restArr[arr[i]]++;
-
         }
 
         for (int i = 0; i < restArr.length; i++) {
-            if (restArr[i]!=0)
-            {
-                result ++;
+            if (restArr[i] != 0) {
+                result++;
             }
         }
 
         System.out.println(result);
-
-
-
-
 
     }
 
