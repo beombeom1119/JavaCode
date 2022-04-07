@@ -12,36 +12,26 @@ public class back2480 {
         int c = scanner.nextInt();
         int max = 0;
 
-        int cost =0;
+        int cost = 0;
 
-        if (a==b && b==c )
-        {
-            cost = 10000+a*1000;
-        }else if (a==c || a==b)
-        {
-            cost = 1000+a*100;
-        }
-        else if (b==a || b==c )
-        {
-            cost = 1000+b*100;
-        }else if (c==a || c==b )
-        {
-            cost = 1000+c*100;
-        }else
-        {
-           if (a>=b && a>=c)
-           {
-               max=a;
-           }else if(b>=a && b>=c)
-           {
-            max=b;
-           }
-           else if(c>=a && c>=b)
-           {
-               max=c;
-           }
+        if (a == b && b == c) {
+            cost = 10000 + a * 1000;
+        } else if (a == c || a == b) {
+            cost = 1000 + a * 100;
+        } else if (b == a || b == c) {
+            cost = 1000 + b * 100;
+        } else if (c == a || c == b) {
+            cost = 1000 + c * 100;
+        } else {
+            if (a >= b && a >= c) {
+                max = a;
+            } else if (b >= a && b >= c) {
+                max = b;
+            } else if (c >= a && c >= b) {
+                max = c;
+            }
 
-           cost = max*100;
+            cost = max * 100;
 
         }
 

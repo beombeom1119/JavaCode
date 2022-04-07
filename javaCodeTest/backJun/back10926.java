@@ -12,7 +12,6 @@ public class back10926 {
         System.out.println(year);
 
 
-
     }
 
 }
